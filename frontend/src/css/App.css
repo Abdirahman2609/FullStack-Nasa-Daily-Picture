@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'article'
+    'info'
+    ;
+}
+header{
+    grid-area: header;
+    place-self: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+article{
+    grid-area: article;
+    place-self: center;
+    display: grid;
+    grid-template-areas: 
+    'search'
+    'button'
+    ;
+}
+form{
+    display: grid;
+    grid-template-areas: 
+    'search'
+    'button'
+    ;
+}
+input{
+    grid-area: search;
+    font-size: 2em;
+    padding: 0.2em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    place-self: center;
+    font-family: 'Crimson Text', serif;
+    
+}
+button{
+    grid-area: button;
+    padding: 0.6em;
+    font-size: 1em;
+    border-radius: 2em;
+    background-color: cadetblue;
+    place-self: center;
+    font-family: 'Crimson Text', serif;
+}
+.info{
+    grid-area: info;
+    display: grid;
+    grid-template-areas: 
+    'title'
+    'image'
+    'explanation'
+    ;
+    place-self: center;
+}
+#title{
+    grid-area: title;
+    place-self: center;
+    font-family: 'Cinzel', serif;
+}
+#image{
+    grid-area: image;
+    place-self: center;
+    width: 500px;
+}
